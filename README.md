@@ -1,3 +1,14 @@
+---
+title: Fraud Detection System
+emoji: 💳
+colorFrom: red
+colorTo: yellow
+sdk: docker
+sdk_version: "latest"
+app_file: app.py
+pinned: false
+---
+
 # 💳 Fraud Detection System
 
 An advanced machine learning-based fraud detection system built with Streamlit that identifies potentially fraudulent transactions in real-time with 99.7% accuracy.
@@ -59,10 +70,10 @@ docker run -p 7860:7860 fraud-detection-app
    - Ensure all files are in the repository:
      - `app.py`
      - `fraud_analysis_pipeline.pkl`
-     - `AIML_Dataset.csv` (optional)
      - `Dockerfile`
      - `requirements.txt`
      - `README.md`
+   - Note: `AIML_Dataset.csv` is optional (only needed for Analytics tab)
 
 2. **Create a Hugging Face Space:**
    - Go to [Hugging Face Spaces](https://huggingface.co/spaces)
@@ -92,8 +103,8 @@ If you prefer using Streamlit SDK instead of Docker:
 .
 ├── app.py                          # Main Streamlit application
 ├── train_model.py                  # Model training script
-├── fraud_analysis_pipeline.pkl     # Trained ML model
-├── AIML_Dataset.csv                # Dataset for analytics
+├── fraud_analysis_pipeline.pkl     # Trained ML model (required)
+├── AIML_Dataset.csv                # Dataset for analytics (optional)
 ├── requirements.txt                # Python dependencies
 ├── Dockerfile                      # Docker configuration
 └── README.md                       # This file
